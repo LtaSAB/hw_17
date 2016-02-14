@@ -1,0 +1,60 @@
+@import
+
+'../utils/_variables',
+'../utils/_mixins';
+html {
+  font-size: $main-font-size;
+}
+/* ie hack
+don't remove that style*/
+.m-page {
+  display: block;
+}
+.container-fluid {
+  min-width: $min-width;
+  max-width: $max-width;
+}
+
+.container-fluid:before, .container-fluid:after,
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.container-fluid:after,
+.clearfix:after {
+  clear: both;
+}
+* {
+  @include prefix(box-sizing, border-box, webkit moz);
+}
+body {
+  font-family:$main-font;
+  font-weight: $main-font-weight;
+  color: $main-color;
+  letter-spacing: 3px;
+}
+.wrapper {
+  overflow: hidden;
+  min-width: $min-width;
+  max-width: 100%;
+  background: url(/img/background-star.png) center no-repeat, black;
+  @include prefix(background-size,cover, webkit  moz o);
+
+  a {
+    text-decoration: $link-text-decoration;
+    color: inherit;
+    outline: none;
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+}
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.title {
+  text-align: center;
+}

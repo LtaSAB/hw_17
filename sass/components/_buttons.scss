@@ -1,0 +1,53 @@
+@import '../utils/_variables';
+a.button {
+  display: inline-block;
+  transition:  border 1s  ease;
+}
+a.next {
+  display: block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #05e7e6;
+  margin: 80px auto 60px;
+  &>i {
+    vertical-align: sub;
+    color: #05e7e6;
+    font-size: 0.7rem;
+  }
+}
+a.read-more {
+  font-size: (19/18)*1rem;
+  background-color: #e53663;
+  padding: 15px 30px;
+  border-radius: 30px;
+  min-width: 200px;
+  &:hover {
+    transition: all 1s ease;
+    background-color: #e53663 - 40%;
+    color: lawngreen ;
+  }
+}
+button[type='submit'] {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: $main-font-size;
+  margin:  20px 15px;
+  letter-spacing: 3px;
+  outline: none;
+  &:hover {
+    transition: all 1s ease;
+    background-color: #e53663 - 40%;
+    color: lawngreen ;
+  }
+}
+button.light-side {
+  background-color: transparent;
+  border: 2px solid #05e7e6;
+  color: $second-color;
+}
+button.black-side {
+  background-color: #e53663;
+}

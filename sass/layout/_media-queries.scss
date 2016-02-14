@@ -1,0 +1,112 @@
+@import '../utils/_variables';
+
+@media screen and (min-width: $xs-width) and(max-width: $sm-width - 1) {
+  .logo {
+    h1 {
+      font-size: 4rem;
+      & + span {
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: $xs-width) {
+  .logo {
+    h1 {
+      & + span {
+        font-size: (24/18)*1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $sm-width) and (max-width: $md-width - 1) {
+  .logo {
+    h1 {
+      padding: 150px 50px 50px;
+    }
+  }
+  #news {
+    article{
+      &:nth-child(2n+1){
+        clear: both;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: $sm-width) {
+  .logo {
+    h1 {
+      font-size: (100/18)*1rem;
+    }
+    &:after {
+      font-size: (21/18)*1rem;
+    }
+  }
+}
+
+@media screen and (min-width: $sm-width) {
+  .logo {
+    a.button.next {
+      margin: 130px auto 110px;
+    }
+  }
+  #comment {
+    .comment-section{
+     li {
+       text-align: left;
+       .img-wrapper {
+         float: left;
+       }
+       &:nth-child(2n+1){
+         clear: both;
+       }
+     }
+    }
+  }
+}
+
+@media screen and (min-width: $md-width) {
+  .about-us {
+    padding: 250px 0 100px;
+    .describe {
+      p {
+        padding: 90px 0 110px;
+        font-size: $main-font-size;
+      }
+      .layout-above {
+        padding: 0 60px;
+      }
+    }
+  }
+  #news {
+    article{
+      &:nth-child(4n+1){
+        clear: both;
+      }
+    }
+  }
+  #progress {
+    padding: 100px 0 70px;
+  }
+  #comment {
+    padding: 70px 0 100px;
+  }
+  #join-us {
+    padding: 100px 0 180px;
+  }
+
+}
+
+@media screen and (min-width: $lg-width) {
+  .logo {
+    h1 {
+      padding: 150px 250px 50px;
+    }
+  }
+}
+
+;
